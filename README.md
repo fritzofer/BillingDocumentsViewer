@@ -1,3 +1,5 @@
+|**URL**<br>https://sap.surpass.co.il:5230/sap/bc/ui5_ui5/sap/ZOF_BLNG_DOC/index.html
+
 ## Application Details
 |               |
 | ------------- |
