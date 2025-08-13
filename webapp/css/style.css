@@ -1,0 +1,14 @@
+/* Layout adjustments */
+.billingLayout {
+  gap: 5rem; /* Space between table and panel */
+}
+
+/* Table styling */
+.billingTable {
+  width: 50%;
+}
+
+/* Panel styling */
+.billingPanel {
+  width: 50%;
+}

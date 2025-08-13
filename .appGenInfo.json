@@ -1,0 +1,24 @@
+{
+  "generationParameters": {
+    "generationDate": "Mon Aug 11 2025 13:11:26 GMT+0300 (Israel Daylight Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "https://sap.surpass.co.il:5230/sap/opu/odata/sap/ZOF_TS1_SRV",
+    "appName": "billingdocs",
+    "appTitle": "Billing Documents Viewer",
+    "appDescription": "Display billing documents from ZOF_TS1_SRV OData service",
+    "appNamespace": "z",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.102.2",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.18.3",
+    "template": "Basic V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

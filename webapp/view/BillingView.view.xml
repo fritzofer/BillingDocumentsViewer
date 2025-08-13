@@ -1,0 +1,51 @@
+<mvc:View
+  controllerName="z.billingdocs.controller.BillingView"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  displayBlock="true"
+  xmlns:l="sap.ui.layout">
+
+  <Page id="billingPage" title="Billing Documents" class="sapUiContentPadding">
+    <HBox id="billingHBox" fitContainer="true" class="billingLayout">
+
+      <!-- Master: Billing documents list -->
+      <Table
+        id="billingTable"
+        items="{/BillingDocuments}"
+        includeItemInSelection="true"
+        mode="SingleSelectMaster"
+        selectionChange="onSelectionChange"
+        class="billingTable">
+        <columns>
+          <Column id="_IDGenColumn1"><Text id="_IDGenText" text="Doc Number"/></Column>
+          <Column id="_IDGenColumn2"><Text id="_IDGenText1" text="Type"/></Column>
+          <Column id="_IDGenColumn3"><Text id="_IDGenText2" text="Sales Org."/></Column>
+        </columns>
+        <items>
+          <ColumnListItem id="_IDGenColumnListItem">
+            <cells>
+              <Text id="_IDGenText3" text="{BillingDocumentNumber}"/>
+              <Text id="_IDGenText4" text="{BillingType}"/>
+              <Text id="_IDGenText5" text="{SalesOrganization}"/>
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+
+      <!-- Detail: Selected billing document info -->
+      <Panel
+        headerText="Billing Document Details"
+        visible="false"
+        id="detailPanel"
+        expandable="true"
+        expanded="true"
+        class="sapUiContentPadding billingPanel">
+        <VBox id="detailVBox">
+          <Text id="_IDGenText6" text="Select a document from the list"/>
+        </VBox>
+      </Panel>
+
+    </HBox>
+  </Page>
+
+</mvc:View>
